@@ -1,11 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-4</title>
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/85fad9741f.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
+
 <body>
+    <!-- Nav section -->
+
+    <nav class="">
+        <div class="flex justify-between items-center mx-4 md:mx-48 py-4">
+            <div>
+                <h3 class="text-2xl font-bold">S-Ticket</h3>
+            </div>
+
+            <div class="hidden md:block">
+
+                <ul class="flex justify-between gap-10 font-medium">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="">
+                <button class="btn btn-outline btn-success ">Bus <img src="/images/bus-icon.png" alt=""> </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <!-- part-1 -->
+    <section>
+        <div class="flex justify-center rounded-md ">
+            <div class="hero h-[550px] w-full md:w-3/4 bg-cover bg-center"
+                style="background-image: url(./images/banner.png);">
+                <div class="hero-content text-center text-neutral-content ">
+                    <div class="max-w-md ">
+                        <h1 class="mb-5 text-4xl font-bold mx-auto text-white ">End-To-End Travel with <br> <span
+                                class="text-5xl text-[#1DD100]">S-Poribohon</span></h1>
+                        <p class="mb-5 text-white">Bangladesh Local Tour Guide are a fast growing tour operator and
+                            travel agent in Bangladesh. Bangladesh Local Tour Guide is approved by Government of
+                            Bangladesh.</p>
+                        <button id="btn1" class="btn bg-[#1DD100] border-none text-black font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col justify-center gap-7 md:flex-row lg:flex-row md:justify-center lg:justify-center md:-mt-8 lg:-mt-10">
+            <div class="border border-800 rounded-xl gap-2 bg-white p-4 flex justify-between items-center">
+                <div>
+                    <img src="/images/people.png" alt="">
+                </div>
+                <div class="">
+                    <h5 class="text-2xl font-bold">500k+</h5>
+                    <p class="text-xs text-gray-600 font-light">Registered users</p>
+                </div>
+            </div>
+            <div class="border border-800 rounded-xl gap-2 bg-white p-4  flex justify-between items-center">
+                <div>
+                    <img src="/images/ticket-cupon.png" alt="">
+                </div>
+                <div>
+                    <h5 class="text-2xl font-bold">1.7 lacks</h5>
+                    <p class="text-xs text-gray-600 font-light">Tickets sold</p>
+                </div>
+            </div>
+            <div class="border border-800 rounded-xl gap-2 bg-white p-4 flex justify-between items-center">
+                <div>
+                    <img src="/images/stoppage.png" alt="">
+                </div>
+                <div>
+                    <h5 class="text-2xl font-bold">80k+</h5>
+                    <p class="text-xs text-gray-600 font-light">Rental partners</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Offer section -->
+
+    <section class="">
+        <div class="" id="poribohon">
+            <h3 class="text-2xl font-bold text-center mt-16">Best Offers For You</h3>
+
+            <div class="flex flex-col justify-center gap-8 md:flex-row md:justify-center md:gap-8">
+                <!-- First coupon -->
+                <div
+                    class="flex justify-center items-center mt-11 w-[320px] md:w-[560px] h-[220px] rounded-xl bg-yellow-400 ">
+                    <div class="ticket-card flex items-center ">
+                        <!-- Left Part -->
+                        <div class="w-2/3 p-4">
+                            <h2 class="text-xl font-bold mb-2">15% Off</h2>
+                            <p class="text-sm">On your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <!-- Divider -->
+                        <div class="divider relative h-fit">
+                            <img src="images/cupon-devider.png" alt="">
+                        </div>
+                        <!-- Right Part -->
+                        <div class=" p-4">
+                            <h2 class="text-xl font-bold mb-2">NEW15</h2>
+                            <p class="text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Coupon -->
+                <div
+                    class="flex justify-center items-center mt-11 w-[320px] md:w-[560px] h-[220px] rounded-xl bg-pink-300 ">
+                    <div class="ticket-card flex items-center ">
+                        <!-- Left Part -->
+                        <div class="w-2/3 p-4">
+                            <h2 class="text-xl font-bold mb-2">20% Off</h2>
+                            <p class="text-sm">On your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <!-- Divider -->
+                        <div class="divider relative h-fit">
+                            <img src="images/cupon-devider.png" alt="">
+                        </div>
+                        <!-- Right Part -->
+                        <div class=" p-4">
+                            <h2 class=" font-bold mb-2">Couple 20</h2>
+                            <p class="text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="btn btn-outline btn-success">See All Offers</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hard section -->
+
+    <div class="bg-gray-300 flex justify-center items-center flex-col mt-7">
+        <div class="space-y-4 text-center">
+            <h3 class="text-2xl font-bold text-center">S Poribohon</h3>
+            <p class="text-center">Bangladesh Local Tour Guide are a fast growing tour operator and travel agent in
+                Bangladesh. Bangladesh Local Tour Guide is approved by Government of Bangladesh</p>
+        </div>
+        <div class="flex justify-center items-center w-[1000px] h-[418px] rounded-xl bg-white mt-5 ">
+            <div class="ticket-card flex items-center ">
+                <!-- Left Part -->
+                <div class="w-4/5 p-4">
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <div>
+                                <img src="/images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="text-2xl font-bold">S poribohon</h5>
+                                <p class="text-xs font-medium">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="btn2" class="btn btn-outline btn-success"><img src="/images/seat-green.png"
+                                    alt="">40 Seats left</button>
+                        </div>
+                    </div>
+                    <div class="border mt-9 rounded-md space-y-4  p-8 bg-gray-200">
+                        <div class="flex justify-between">
+                            <div>
+                                <p>Route</p>
+                            </div>
+                            <div>
+                                <p>Dhaka-Sylhet</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between">
+                            <div>Departure Time</div>
+                            <div>9.00PM</div>
+                        </div>
+                        <hr>
+                        <div>
+                            <button class="btn">Boarding Point-Laxmipur</button>
+                            <button class="btn">Dropping Point-Bogura</button>
+                            <button class="btn">Est.Time-11hour</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Divider -->
+                <div class="divider relative h-fit ">
+                    <img class="" src="images/info-devider.png" alt="">
+        
+                </div>
+                <!-- Right Part -->
+                <div class=" flex flex-col items-center">
+                    <img src="/images/fare.png" alt="">
+                    <h4>550 Taka</h4>
+                    <p>Per Seat</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Very Difficult -->
+        <div class="flex  w-[1000px] rounded-xl bg-white mt-5 ">
+            <div class="ticket-card flex    ">
+                <!-- Left Part -->
+                <div class="flex justify-start flex-col space-y-3 w-[500px] mt-3 ml-5">
+                    <div>
+                        <h5>Select Your Seat</h5>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="text-[#1DD100]">Selected</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex justify-end">
+                        <img src="images/wheel.png" alt="">
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>A</p>
+                        <button id="seat" class="btn">A1</button>
+                        <button id="seat" class="btn">A2</button>
+                        <button id="seat" class="btn">A3</button>
+                        <button id="seat" class="btn">A4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>B</p>
+                        <button id="seat" class="btn">B1</button>
+                        <button id="seat" class="btn">B2</button>
+                        <button id="seat" class="btn">B3</button>
+                        <button id="seat" class="btn">B4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>C</p>
+                        <button id="seat" class="btn">C1</button>
+                        <button id="seat" class="btn">C2</button>
+                        <button id="seat" class="btn">C3</button>
+                        <button id="seat" class="btn">C4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>D</p>
+                        <button id="seat" class="btn">E1</button>
+                        <button id="seat" class="btn">E2</button>
+                        <button id="seat" class="btn">E3</button>
+                        <button id="seat" class="btn">E4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>F</p>
+                        <button id="seat" class="btn">F1</button>
+                        <button id="seat" class="btn">F2</button>
+                        <button id="seat" class="btn">F3</button>
+                        <button id="seat" class="btn">F4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>G</p>
+                        <button id="seat" class="btn">G1</button>
+                        <button id="seat" class="btn">G2</button>
+                        <button id="seat" class="btn">G3</button>
+                        <button id="seat" class="btn">G4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>H</p>
+                        <button id="seat" class="btn">H1</button>
+                        <button id="seat" class="btn">H2</button>
+                        <button id="seat" class="btn">H3</button>
+                        <button id="seat" class="btn">H4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>I</p>
+                        <button id="seat" class="btn">I1</button>
+                        <button id="seat" class="btn">I2</button>
+                        <button id="seat" class="btn">I3</button>
+                        <button id="seat" class="btn">I4</button>
+                    </div>
+                    <div class="flex justify-evenly items-center">
+                        <p>J</p>
+                        <button id="seat" class="btn">J1</button>
+                        <button id="seat" class="btn">J2</button>
+                        <button id="seat" class="btn">J3</button>
+                        <button id="seat" class="btn">J4</button>
+                    </div>
+        
+        
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="divider relative h-full ">
+                <img class="" src="images/info-devider.png" alt="">
+        
+            </div>
+        
+        
+            <!-- Right Part -->
+            <div>
+                <div class="mt-5">
+                    <h5 class=>Select Your Seat</h5>
+                </div>
+                <hr>
+                <!-- Calculation Part -->
+                <div class="border mt-9 rounded-md space-y-4  p-8 bg-gray-300">
+                    <div class="flex justify-evenly">
+                        <div>
+                            <p>Seat <span id="number" class="bg-[#1DD100] rounded ">0</span> </p>
+                        </div>
+                        <div>
+                            <p>Class</p>
+                        </div>
+                        <div>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                    <hr class=>
+                    <div id="ap">
+        
+                    </div>
+                    <hr>
+                    <div class="flex justify-between gap-x-3">
+                        <!-- Total Price Display -->
+                        <div id="totalPrice"></div>
+        
+                        <!-- <div>
+                            <p>Total Price</p>
+                        </div>
+                        <div>
+                            <p>BDT 1100</p>
+                        </div> -->
+        
+                    </div>
+                    <!-- <div>
+                        <form id="voucherForm" class="flex items-center">
+                            <input type="text" id="voucherCode" name="voucherCode" placeholder="Enter voucher code"
+                                class="px-4 py-2 border border-gray-300 rounded-l focus:outline-none focus:ring focus:border-blue-300 flex-1">
+                            <button type="submit"
+                                class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Apply</button>
+                        </form>
+                    </div> -->
+        
+                    <div class="flex justify-center mt-8" id="voucherBtnContainer">
+                        <div id="voucherContainer">
+                            <form id="voucherForm" class="flex items-center">
+                                <input type="text" id="voucherCode" name="voucherCode" placeholder="Enter voucher code"
+                                    class="px-4 py-2 border border-gray-300 rounded-l focus:outline-none focus:ring focus:border-blue-300 flex-1">
+                                <button type="submit"
+                                    class="bg-[#1DD100] text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Apply</button>
+                            </form>
+                        </div>
+                    </div>
+        
+        
+        
+                    <div class="flex justify-between gap-x-3">
+                        <!-- <div id="gt">
+                            <p>Grand Total</p>
+                        </div>
+                        <div>
+                            <p>BDT 1100</p>
+                        </div> -->
+                        <div>
+                            <p id="grandTotal">Grand Total</p>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <!-- form -->
+                <div class="mt-6">
+                    <form id="passengerForm" class="max-w-md mx-auto">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700">Enter your name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Enter your email ID:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email ID"
+                                class="px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700">Enter your phone number:</label>
+                            <input type="number" id="phone" name="phone" placeholder="Enter your phone number"
+                                class="px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <!-- <button  type="submit" class="bg-[#1DD100] text-white px-4 py-2 rounded-md w-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Next</button> -->
+                        <!-- The button to open modal -->
+                        <label for="my_modal_7"
+                            class="bg-[#1DD100] text-white px-4 py-2 rounded-md w-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">next</label>
+        
+        
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box flex flex-col text-center">
+                                <img class="w-10 flex justify-center items-center" src="images/success.png" alt="">
+                                <h3 class="text-lg font-bold text-[#1DD100]">success!</h3>
+                                <p class="py-4">Thank you for Booking Our Bus Seats.</p>
+                                <p>We are working hard to find the best service and deals for you. </p>
+                                <p>Shortly you will find a confirmation in your email.</p>
+                            </div>
+                            <label class="modal-backdrop" for="my_modal_7">Continue</label>
+                    </form>
+        
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        </div>
+   
+    <!-- </div> -->
+
+
+    <!-- Footer -->
+
+    <footer class="footer p-10 bg-neutral text-neutral-content pt-5">
+        <nav>
+            <h6 class="footer-title">S-Ticket</h6>
+            <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Download Our App</h6>
+            <div class="flex border border-white rounded p-2">
+                <img src="images/playstore.png" alt="">
+                <div>
+                    <p class="text-xs">Get It On</p>
+                    <h5 class="text-base">Google Play</h5>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
     
+    
+
+
+    <script src="app.js"></script>
+
+
 </body>
+
 </html>
